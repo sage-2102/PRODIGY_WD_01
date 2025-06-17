@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sage's Brownies - Delicious Homemade Treats</title>
+<meta name="description" content="Order delicious homemade brownies from Sage’s Brownies. Freshly baked, clean and hygienic environment. Order now and satisfy your cravings!">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100%;
+    background: #f5ede2;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(93, 64, 55, 0.95);
+    color: white;
+    padding: 15px 30px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s;
+  }
+
+  nav ul li a:hover {
+    background-color: #ffcc00;
+    color: #3e2723;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+
+  section, header {
+    scroll-snap-align: start;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+    box-sizing: border-box;
+  }
+
+  header {
+    background: linear-gradient(to right, #6d4c41, #8d6e63);
+    color: white;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+
+  header p {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+  }
+
+  section {
+    background: #fff;
+    color: #3e2723;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    transition: transform 0.3s;
+  }
+
+  section:hover {
+    transform: translateY(-5px);
+  }
+
+  h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: #6d4c41;
+  }
+
+  .products-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .product-card {
+    background: #fff3e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px;
+  }
+
+  .product-card h3 {
+    margin: 0 0 5px;
+    color: #6d4c41;
+  }
+
+  .button-link {
+    display: inline-block;
+    background-color: #6d4c41;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .button-link:hover {
+    background-color: #8d6e63;
+    transform: scale(1.05);
+  }
+
+  footer {
+    background: rgba(93, 64, 55, 0.95);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+
+  a {
+    color: #6d4c41;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#order">Order</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<header id="home">
+  <h1>Sage's Brownies</h1>
+  <p>Delicious homemade brownies baked just for you!</p>
+</header>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>Welcome to <strong>Sage's Brownies</strong> — a home-based brownie business run by me, Sejal. I started baking during the lockdown, discovering the joy of sharing happiness through every fudgy bite.</p>
+  <p>Each batch is handcrafted with love and care in a clean, hygienic kitchen using the finest ingredients. Orders are freshly made to ensure you enjoy warm, delicious brownies every time. Please place your orders 24 hours in advance to guarantee freshness!</p>
+</section>
+
+<section id="products">
+  <h2>Our Products</h2>
+  <div class="products-container">
+    <div class="product-card">
+      <h3>Veg Brownies</h3>
+      <p>Rich, moist, and 100% vegetarian. A classic indulgence with a fudgy bite.</p>
+    </div>
+    <div class="product-card">
+      <h3>Egg Brownies</h3>
+      <p>Traditional gooey goodness with a hint of creamy richness, made with fresh eggs.</p>
+    </div>
+    <div class="product-card">
+      <h3>Protein Brownies</h3>
+      <p>Power up with our protein-packed brownies — a guilt-free treat for your sweet tooth.</p>
+    </div>
+  </div>
+</section>
+
+<section id="order">
+  <h2>Order Now</h2>
+  <p>Ready to satisfy your brownie cravings? Sage's Brownies offers fresh, homemade brownies with customizable options for your taste buds.</p>
+  <p>📦 4 pieces for just ₹200</p>
+  <p>🕒 Order at least 24 hours in advance to ensure your brownies are freshly baked.</p>
+  <p>💌 Customized messages or packaging? Let us know, and we’ll make your box extra special!</p>
+  <a class="button-link" href="https://wa.me/qr/B2EY5LWTJY5QO1" target="_blank">Order on WhatsApp</a>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>Have questions or want to customize your order? Get in touch:</p>
+  <p> Phone: <a href="tel:+917276293287">7276293287</a></p>
+  <p> Email: <a href="mailto:sagesbrownie@gmail.com">sagesbrownie@gmail.com</a></p>
+  <p> Instagram: <a href="https://www.instagram.com/sagescravings?utm_source=qr&igsh=cGlmOTZ1aXg0azU0" target="_blank">@sagescravings</a></p>
+  <p>I personally handle every inquiry to make sure you get exactly what you’re craving!</p>
+</section>
+
+<footer>
+  &copy; 2025 Sage's Brownies. All rights reserved.
+</footer>
+
+</body>
+</html>
